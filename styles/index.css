@@ -9,6 +9,7 @@ header {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
     grid-template-rows: repeat(2, auto);
+    background-color: #1f2937;
 }
 
 div.header-content {
