@@ -7,38 +7,51 @@ body {
 header {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(17, 1fr);
+    grid-template-columns: repeat(21, 1fr);
     grid-template-rows: repeat(2, auto);
     background-color: #1f2937;
 }
 
 div.header-content {
-    grid-column: 2 / span 15;
+    grid-column: 3 / 20;
     grid-row: 1 / 2;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
 }
 
 div.logo {
     align-self: center;
     color: #f9faf8;
     font-size: 24px;
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+}
+
+nav {
+    grid-column: 9 / 18;
+    grid-row: 1 / 2;
+}
+
+div.hero-text {
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
 }
 
 section.hero {
-    grid-column: 2 / span 15;
+    grid-column: 3 / 20;
     grid-row: 2 / 3;
 }
 
 div.hero-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
 }
 
 ul.nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
-    column-gap: 10px;
+    column-gap: 10%;
 }
 
 a {
@@ -47,9 +60,8 @@ a {
 
 
 div.hero-image {
-    justify-self: center;
-    align-self: center;
-    margin-left: auto;
+    grid-column: 9 / 18;
+    grid-row: 1 / 2;
 }
 
 div.hero-text h1 {
@@ -85,5 +97,14 @@ div.hero-image img {
     
     div.hero-text h1 {
             font-size: 1em;
+        }
+
+    div.hero-text {
+        width: 120px;
+    }
+
+    div.hero-image img {
+            width: 170px;
+            height: auto;
         }
 }
