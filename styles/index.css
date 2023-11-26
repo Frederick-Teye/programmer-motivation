@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: pink;
 }
 
 /* hero styles */
@@ -17,6 +16,10 @@ div.header-content {
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
+}
+
+div.logo {
+    align-self: center;
 }
 
 section.hero {
