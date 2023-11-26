@@ -32,7 +32,6 @@ section.hero {
 
 div.hero-content {
     display: flex;
-    justify-content: space-between;
 }
 
 ul.nav-links {
@@ -50,6 +49,7 @@ a {
 div.hero-image {
     justify-self: center;
     align-self: center;
+    margin-left: auto;
 }
 
 div.hero-text h1 {
