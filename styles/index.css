@@ -6,6 +6,7 @@ body {
 /* hero styles */
 
 header {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(17, 1fr);
     grid-template-rows: repeat(2, auto);
