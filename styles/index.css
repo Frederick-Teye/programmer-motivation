@@ -21,6 +21,8 @@ div.header-content {
 
 div.logo {
     align-self: center;
+    color: #f9faf8;
+    font-size: 24px;
 }
 
 section.hero {
@@ -48,6 +50,23 @@ a {
 div.hero-image {
     justify-self: center;
     align-self: center;
+}
+
+div.hero-text h1 {
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+div.hero-text p {
+    font-size: 18px;
+    color: #e5e7e8;
+}
+
+button {
+    background-color: #3882f6;
+    border-radius: 10%;
+    color: white;
+    border: 2px solid;
 }
 
 img {
