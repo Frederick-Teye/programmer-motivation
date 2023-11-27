@@ -106,7 +106,7 @@ div.hero-image img {
     height: auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     div.hero-text p {
             font-size: 0.7em;
         }
@@ -136,6 +136,48 @@ div.hero-image img {
 
     button {
         font-size: 0.7em;
+    }
+
+    ul.nav-links {
+        font-size: 0.8em;
+    }
+
+    nav {
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 668px) {
+    div.hero-text p {
+        font-size: 1em;
+    }
+
+    div.logo {
+        font-size: 1.5em;
+    }
+
+    div.hero-text h1 {
+        font-size: 1.6em;
+    }
+
+    div.hero-text {
+        width: 120px;
+    }
+
+    div.hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        font-size: 0.9em;
     }
 
     ul.nav-links {
