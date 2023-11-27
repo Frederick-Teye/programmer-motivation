@@ -241,6 +241,7 @@ div.tools-info-images-section {
 div.tools-info-image-coat {
     width: 180px;
     height: auto;
+    flex-shrink: auto;
 }
 
 div.tools-info-image-coat img {
