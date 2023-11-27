@@ -234,3 +234,8 @@ div.tools-info-images-section {
     grid-row: 2 / 3;
 }
 
+div.tools-info-image-coat {
+    width: 180px;
+    height: auto;
+}
+
