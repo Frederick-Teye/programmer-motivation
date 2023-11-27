@@ -249,3 +249,16 @@ div.tools-info-image-coat img {
     height: 180px;
 }
 
+
+@media screen and (max-width: 430px) {
+    div.tools-info-image-coat {
+            width: 100px;
+            height: auto;
+            flex-shrink: auto;
+        }
+
+    div.tools-info-image-coat img {
+            width: 100px;
+            height: 100px;
+        }
+}
