@@ -9,6 +9,7 @@ header {
     display: grid;
     grid-template-columns: repeat(23, 1fr);
     grid-template-rows: repeat(2, auto);
+    justify-content: center;
     background-color: #1f2937;
 }
 
@@ -17,6 +18,7 @@ div.header-content {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(23, 1fr);
+    justify-content: center;
 }
 
 div.logo {
@@ -30,11 +32,22 @@ div.logo {
 nav {
     grid-column: 13 / 22;
     grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 div.hero-text {
     grid-column: 3 / 12;
     grid-row: 1 / 2;
+}
+
+div.hero-text h1 {
+    margin: 0%;
+}
+
+div.hero-text p {
+    margin: 0%;
 }
 
 section.hero {
@@ -45,6 +58,10 @@ section.hero {
 div.hero-content {
     display: grid;
     grid-template-columns: repeat(23, 1fr);
+    justify-content: center;
+    margin: 40px 0% 40px 0%;
+    align-items: center;
+    justify-content: center;
 }
 
 ul.nav-links {
@@ -52,16 +69,19 @@ ul.nav-links {
     justify-content: flex-end;
     list-style: none;
     column-gap: 10%;
+    margin: 0%;
 }
 
 a {
     text-decoration: none;
+    color: #e5e7eb;
 }
 
 
 div.hero-image {
     grid-column: 13 / 22;
     grid-row: 1 / 2;
+    align-self: center;
 }
 
 div.hero-text h1 {
@@ -71,7 +91,7 @@ div.hero-text h1 {
 
 div.hero-text p {
     font-size: 18px;
-    color: #e5e7e8;
+    color: #e5e7eb;
 }
 
 button {
@@ -108,4 +128,23 @@ div.hero-image img {
             width: 170px;
             height: auto;
         }
+
+    div.hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+
+    button {
+        font-size: 0.7em;
+        width: initial;
+    }
+
+    ul.nav-links {
+        font-size: 0.8em;
+    }
+
+    nav {
+        align-items: flex-start;
+    }
 }
