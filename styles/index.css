@@ -202,3 +202,21 @@ div.hero-image img {
             font-size: 0.6em;
         }
 }
+
+
+
+
+
+/* styles for tools info section */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: auto;
+}
+
+section.tools-info {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: auto;
+}
