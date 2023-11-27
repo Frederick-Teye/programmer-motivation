@@ -5,46 +5,46 @@ body {
 /* hero styles */
 
 header {
-    margin-top: 10px;
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(21, 1fr);
+    grid-template-columns: repeat(23, 1fr);
     grid-template-rows: repeat(2, auto);
     background-color: #1f2937;
 }
 
 div.header-content {
-    grid-column: 3 / 20;
+    grid-column: 1 / 24;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(17, 1fr);
+    grid-template-columns: repeat(23, 1fr);
 }
 
 div.logo {
     align-self: center;
     color: #f9faf8;
     font-size: 24px;
-    grid-column: 1 / 8;
+    grid-column: 3 / 12;
     grid-row: 1 / 2;
 }
 
 nav {
-    grid-column: 9 / 18;
+    grid-column: 13 / 22;
     grid-row: 1 / 2;
 }
 
 div.hero-text {
-    grid-column: 1 / 8;
+    grid-column: 3 / 12;
     grid-row: 1 / 2;
 }
 
 section.hero {
-    grid-column: 3 / 20;
+    grid-column: 1 / 24;
     grid-row: 2 / 3;
 }
 
 div.hero-content {
     display: grid;
-    grid-template-columns: repeat(17, 1fr);
+    grid-template-columns: repeat(23, 1fr);
 }
 
 ul.nav-links {
@@ -60,7 +60,7 @@ a {
 
 
 div.hero-image {
-    grid-column: 9 / 18;
+    grid-column: 13 / 22;
     grid-row: 1 / 2;
 }
 
@@ -79,6 +79,7 @@ button {
     border-radius: 10%;
     color: white;
     border: 2px solid;
+    width: 14.4%;
 }
 
 div.hero-image img {
