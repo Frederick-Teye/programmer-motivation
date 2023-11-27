@@ -218,5 +218,5 @@ main {
 section.tools-info {
     display: grid;
     grid-template-columns: repeat(23, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(2, auto);
 }
