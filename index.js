@@ -39,3 +39,6 @@ function cycleBatches() {
     // Display the next batch
     displayBatch(currentIndex);
 }
+
+// Set an interval to cycle through batches
+setInterval(cycleBatches, 5000);
