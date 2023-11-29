@@ -8,6 +8,14 @@ const batchSize = 5;
 // Index to track currently displayed batch
 let currentIndex = 0;
 
+function fadeOut(element, duration) {
+    element.style.transition = `opacity ${duration}ms ease-in-out`;
+    element.style.opacity = 0;
+    setTimeout(() => {
+        element.style.display = 'none';
+    }, duration);
+}
+
 // Function to display a batch of items
 function displayBatch(startIndex) {
     // Hide all items
