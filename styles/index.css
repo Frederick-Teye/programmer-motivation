@@ -232,10 +232,7 @@ div.tools-info-text {
 div.tools-info-images-section {
     grid-column: 1 / 24;
     grid-row: 2 / 3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    justify-self: center;
 }
 
 div.tools-info-image-coat {
