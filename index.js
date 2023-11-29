@@ -22,3 +22,6 @@ function displayBatch(startIndex) {
         }
     }
 }
+
+// Initial display of the first batch
+displayBatch(currentIndex);
