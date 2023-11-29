@@ -16,6 +16,14 @@ function fadeOut(element, duration) {
     }, duration);
 }
 
+function fadeIn(element, duration) {
+    element.style.transition = `opacity ${duration}ms ease-in-out`;
+    element.style.display = 'block';
+    setTimeout(() => {
+        element.style.opacity = 1;
+    }, 100); // Delay the start of the fade-in effect
+}
+
 // Function to display a batch of items
 function displayBatch(startIndex) {
     // Hide all items
