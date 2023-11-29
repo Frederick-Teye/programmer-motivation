@@ -18,7 +18,7 @@ function fadeOut(element, duration) {
 
 function fadeIn(element, duration) {
     element.style.transition = `opacity ${duration}ms ease-in-out`;
-    element.style.display = 'block';
+    element.style.display = 'inline-block';
     setTimeout(() => {
         element.style.opacity = 1;
     }, 100); // Delay the start of the fade-in effect
