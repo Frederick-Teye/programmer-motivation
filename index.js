@@ -25,3 +25,17 @@ function displayBatch(startIndex) {
 
 // Initial display of the first batch
 displayBatch(currentIndex);
+
+// Function to cycle through batches (for example, move forward)
+function cycleBatches() {
+    // Update the index for the next batch
+    currentIndex += batchSize;
+
+    // Check if we reached the end, if so, go back to the start
+    if (currentIndex >= items.length) {
+        currentIndex = 0;
+    }
+
+    // Display the next batch
+    displayBatch(currentIndex);
+}
