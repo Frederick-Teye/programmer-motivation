@@ -26,17 +26,13 @@ function fadeIn(element, duration) {
 
 // Function to display a batch of items
 function displayBatch(startIndex) {
-    // Hide all items
-    items.forEach(item => {
-        item.style.display = 'none';
-    });
-
-    // Display the next batch
-    for (let i = startIndex; i < startIndex + batchSize; i++) {
-        if (items[i]) {
-            items[i].style.display = 'block';
+    items.forEach((item, index) => {
+        if (index >= startIndex && index < startIndex + batchSize) {
+            fadeIn(item, 2000); // Fade in duration
+        } else {
+            fadeOut(item, 2000); // Fade out duration
         }
-    }
+    });
 }
 
 // Initial display of the first batch
