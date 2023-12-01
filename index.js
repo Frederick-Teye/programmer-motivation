@@ -3,7 +3,16 @@ const displayContainer = document.querySelector('.tools-info-images-section');
 const items = displayContainer.querySelectorAll('.tools-info-image-coat');
 
 // Number of items to display at a time
-const batchSize = 4;
+function findBatchSize() {
+    if (window.innerWidth < 729) {
+        return 4;
+    } else {
+        return 3;
+    }
+}
+let batchSize = findBatchSize();
+
+
 
 // Index to track currently displayed batch
 let currentIndex = 0;
