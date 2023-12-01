@@ -237,6 +237,7 @@ div.tools-info-images-section {
     justify-self: center;
     align-items: center;
     gap: 20px;
+    overflow-y: auto;
 }
 
 div.tools-info-image-coat {
