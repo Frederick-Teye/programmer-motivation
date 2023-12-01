@@ -235,6 +235,7 @@ div.tools-info-images-section {
     display: flex;
     justify-self: center;
     align-items: center;
+    gap: 20px;
 }
 
 div.tools-info-image-coat {
