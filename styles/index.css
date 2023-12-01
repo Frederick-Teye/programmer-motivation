@@ -233,10 +233,6 @@ div.tools-info-text {
 div.tools-info-images-section {
     grid-column: 1 / 24;
     grid-row: 2 / 3;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    gap: 20px;
     overflow-y: auto;
 }
 
@@ -259,6 +255,9 @@ div.image-text {
     text-align: center;
 }
 
+
+
+/* media query for the info section */
 
 @media screen and (max-width: 430px) {
     div.tools-info-image-coat {
