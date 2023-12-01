@@ -5,14 +5,13 @@ const items = displayContainer.querySelectorAll('.tools-info-image-coat');
 // Number of items to display at a time
 function findBatchSize() {
     if (window.innerWidth < 729) {
-        return 4;
-    } else {
         return 3;
+    } else {
+        return 4;
     }
 }
+
 let batchSize = findBatchSize();
-
-
 
 // Index to track currently displayed batch
 let currentIndex = 0;
@@ -33,8 +32,7 @@ function fadeIn(element, duration) {
     }, 100); // Delay the start of the fade-in effect
 }
 
-// Function to display a batch of items
-function displayBatch(startIndex) {
+function displayBatch(startIndex, batchSize) {
     items.forEach((item, index) => {
         if (index >= startIndex && index < startIndex + batchSize) {
             fadeIn(item, 2000); // Fade in duration
@@ -44,22 +42,24 @@ function displayBatch(startIndex) {
     });
 }
 
-// Initial display of the first batch
-displayBatch(currentIndex);
+displayBatch(currentIndex, batchSize); // Initial display of the first batch
 
-// Function to cycle through batches (for example, move forward)
-function cycleBatches() {
-    // Update the index for the next batch
+function cycleBatches(batchSize) {
     currentIndex += batchSize;
-
-    // Check if we reached the end, if so, go back to the start
     if (currentIndex >= items.length) {
         currentIndex = 0;
     }
-
-    // Display the next batch
-    displayBatch(currentIndex);
+    displayBatch(currentIndex, batchSize);
 }
 
-// Set an interval to cycle through batches
-setInterval(cycleBatches, 5000);
+function displayBatchWithDynamicSize() {
+    const newBatchSize = findBatchSize();
+    cycleBatches(newBatchSize);
+}
+
+window.addEventListener('resize', displayBatchWithDynamicSize);
+displayBatchWithDynamicSize();
+
+setInterval(() => {
+    displayBatchWithDynamicSize();
+}, 5000);
