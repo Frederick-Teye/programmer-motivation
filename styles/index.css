@@ -220,7 +220,7 @@ section.tools-info {
     grid-row: 1 / 2;
     display: inherit;
     grid-template-columns: inherit;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: auto 650px;
 }
 
 div.tools-info-text {
@@ -233,6 +233,7 @@ div.tools-info-images-section {
     grid-column: 1 / 24;
     grid-row: 2 / 3;
     justify-self: center;
+    display: flex;
 }
 
 div.tools-info-image-coat {
