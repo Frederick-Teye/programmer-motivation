@@ -220,7 +220,7 @@ section.tools-info {
     grid-row: 1 / 2;
     display: inherit;
     grid-template-columns: inherit;
-    grid-template-rows: auto 250px;
+    grid-template-rows: auto 300px;
 }
 
 div.tools-info-text {
@@ -238,19 +238,20 @@ div.tools-info-images-section {
     grid-column: 1 / 24;
     grid-row: 2 / 3;
     overflow-y: auto;
-    margin: 0% auto;
+    margin: 0% auto 92px auto;
+
 }
 
 div.tools-info-image-coat {
-    width: 180px;
+    width: 90px;
     height: auto;
     flex-shrink: auto;
     margin: 0% 10px;
 }
 
 div.tools-info-image-coat img {
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
     background-color: white;
 }
 
@@ -267,13 +268,13 @@ div.image-text {
 
 @media screen and (max-width: 430px) {
     div.tools-info-image-coat {
-            width: 100px;
+            width: 60px;
             height: auto;
             flex-shrink: auto;
         }
 
     div.tools-info-image-coat img {
-            width: 100px;
-            height: 100px;
+            width: 60px;
+            height: 60px;
         }
 }
