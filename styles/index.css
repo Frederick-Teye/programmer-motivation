@@ -281,4 +281,17 @@ div.image-text {
     div.tools-info-text {
         font-size: 20px;
     }
+
+    section.tools-info {
+        grid-template-rows: auto 200px;
+    }
+
+    div.image-text {
+        font-size: 11px;
+    }
+
+    div.tools-info-images-section {
+        margin: 0% auto 85px auto;
+    }
+        
 }
