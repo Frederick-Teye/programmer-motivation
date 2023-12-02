@@ -308,6 +308,7 @@ section.quote {
     display: inherit;
     grid-template-columns: inherit;
     grid-template-rows: auto;
+    background-color: #e5e7eb;
 }
 
 blockquote {
@@ -315,8 +316,20 @@ blockquote {
     grid-row: 1 / 2;
 }
 
+blockquote p {
+    font-size: 36px;
+    font-style: italic;
+}
+
 blockquote footer {
     display: flex;
     justify-content: flex-end;
-    padding-right: 5px;
+    padding-right: 13px;
 }
+
+/* media query styles for section.quote */
+
+
+
+
+
