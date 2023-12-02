@@ -333,3 +333,8 @@ blockquote footer {
 
 
 
+/* style for call to action section */
+section.sign-up {
+    grid-column: 1 / 24;
+    grid-row: 3 / 4;
+}
