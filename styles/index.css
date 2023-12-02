@@ -212,7 +212,7 @@ div.hero-image img {
 main {
     display: grid;
     grid-template-columns: repeat(23, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(3, auto);
 }
 
 section.tools-info {
