@@ -295,3 +295,28 @@ div.image-text {
     }
         
 }
+
+
+
+
+/* Styles for quote section */
+section.quote {
+    grid-column: 1 / 24;
+    grid-row: 2 / 3;
+    justify-self: center;
+    text-align: center;
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-template-rows: auto;
+}
+
+blockquote {
+    grid-column: 4 / 20;
+    grid-row: 1 / 2;
+}
+
+blockquote footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
