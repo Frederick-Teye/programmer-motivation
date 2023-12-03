@@ -254,6 +254,7 @@ div.tools-info-image-coat {
     height: auto;
     flex-shrink: auto;
     margin: 0% 10px;
+    display: none;
 }
 
 div.tools-info-image-coat img {
@@ -269,9 +270,6 @@ div.image-text {
     text-align: center;
 }
 
-div.tools-info-image-coat {
-    display: none;
-}
 
 
 
