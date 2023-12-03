@@ -114,7 +114,7 @@ div.hero-image img {
 
 @media screen and (max-width: 430px) {
     div.hero-text p {
-            font-size: 0.7em;
+            font-size: 0.8em;
         }
 
     div.logo {
@@ -122,7 +122,7 @@ div.hero-image img {
         }
     
     div.hero-text h1 {
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
     div.hero-text {
@@ -285,15 +285,15 @@ div.image-text {
         }
 
     div.tools-info-text {
-        font-size: 20px;
+        font-size: 1.1em;
     }
 
     section.tools-info {
-        grid-template-rows: auto 200px;
+        grid-template-rows: auto 198px;
     }
 
     div.image-text {
-        font-size: 11px;
+        font-size: 0.72em;
     }
 
     div.tools-info-images-section {
@@ -336,7 +336,21 @@ blockquote footer {
 }
 
 /* media query styles for section.quote */
+@media screen and (max-width: 430px) {
+    blockquote p {
+        font-size: 1.1em;
+    }
 
+    blockquote footer {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    blockquote {
+        grid-column: 2 / 22;
+        grid-row: 1 / 2;
+    }
+}
 
 
 
@@ -390,16 +404,46 @@ button.sign-up {
 
 
 /* media query style for call to action section */
+@media screen and (max-width: 430px) {
+    p.heading-text {
+        font-size: 1.1em;
+        font-weight: 700;
+    }
 
+    p.sub-text {
+        font-size: 0.8em;
+    }
 
+    div.to-action-flex-container {
+        grid-column: 2 / 23;
+        padding: 5px 10px;
+    }
 
+    div.call-to-action-text {
+        grid-row: 1 / 5;
+        justify-self: center;
+        align-self: center;
+    }
 
+    section.sign-up {
+        /* grid-column: 1 / 24;
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: repeat(23, 1fr);
+        grid-template-rows: auto; */
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
 
-
-
-
-
-
+    button.sign-up {
+        grid-column: 14 / 18;
+        grid-row: 2 / 4;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
 
 
 
@@ -408,7 +452,7 @@ button.sign-up {
 footer.main {
     background-color: #1f2937;
     color: #f9faf8;
-    font-size: 16px;
+    font-size: 18px;
     display: grid;
     grid-template-columns: repeat(23, 1fr);
     grid-template-rows: auto;
@@ -422,4 +466,13 @@ span {
     grid-column: 1 / 24;
     grid-row: 1 / 2;
     text-align: center;
+}
+
+
+
+/* media query style for footer */
+@media screen and (max-width: 430px) {
+    footer.main {
+        font-size: 0.8em;
+    }
 }
