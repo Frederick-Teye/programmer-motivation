@@ -376,3 +376,31 @@ div.call-to-action-text {
     display: flex;
     flex-direction: column;
 }
+
+
+/* media query style for call to action section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style for footer */
+
+footer.main {
+    background-color: #1f2937;
+    color: #f9faf8;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
