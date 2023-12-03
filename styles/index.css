@@ -329,6 +329,8 @@ blockquote footer {
     display: flex;
     justify-content: flex-end;
     padding-right: 13px;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 /* media query styles for section.quote */
