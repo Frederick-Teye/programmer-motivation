@@ -96,9 +96,10 @@ div.hero-text p {
 
 button {
     background-color: #3882f6;
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
     border: 2px solid;
+    padding: 5px 20px;
 }
 
 button.first {
