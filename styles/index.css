@@ -223,8 +223,8 @@ main {
 section.tools-info {
     grid-column: 1 / 24;
     grid-row: 1 / 2;
-    display: inherit;
-    grid-template-columns: inherit;
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
     grid-template-rows: auto 300px;
 }
 
@@ -310,8 +310,8 @@ section.quote {
     grid-row: 2 / 3;
     justify-self: center;
     text-align: center;
-    display: inherit;
-    grid-template-columns: inherit;
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
     grid-template-rows: auto;
     background-color: #e5e7eb;
 }
@@ -354,7 +354,6 @@ section.sign-up {
 div.to-action-flex-container {
     grid-column: 1 / 24;
     grid-row: 1 / 2;
-    justify-self: center;
     display: flex;
     align-items: center;
     gap: 100px;
