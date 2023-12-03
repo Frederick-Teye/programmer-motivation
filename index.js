@@ -24,18 +24,18 @@ function fadeOut(element, duration) {
     }, duration);
 }
 
-function fadeIn(element, duration) {
-    element.style.transition = `opacity ${duration}ms ease-in-out`;
-    element.style.display = 'inline-block';
+function fadeInAfterFadeOut(element, fadeInDuration) {
     setTimeout(() => {
+        element.style.display = 'inline-block';
+        element.style.transition = `opacity ${fadeInDuration}ms ease-in-out`;
         element.style.opacity = 1;
-    }, 100); // Delay the start of the fade-in effect
+    }, 2000); // Wait for fade-out (2 seconds) before starting fade-in
 }
 
 function displayBatch(startIndex, batchSize) {
     items.forEach((item, index) => {
         if (index >= startIndex && index < startIndex + batchSize) {
-            fadeIn(item, 2000); // Fade in duration
+            fadeInAfterFadeOut(item, 2000); // Fade in duration after fade out
         } else {
             fadeOut(item, 2000); // Fade out duration
         }

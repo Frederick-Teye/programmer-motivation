@@ -269,6 +269,10 @@ div.image-text {
     text-align: center;
 }
 
+div.tools-info-image-coat {
+    display: none;
+}
+
 
 
 /* media query for the info section */
@@ -417,7 +421,7 @@ button.sign-up {
 
     div.to-action-flex-container {
         grid-column: 2 / 23;
-        padding: 5px 10px;
+        padding: 10px 15px;
     }
 
     div.call-to-action-text {
