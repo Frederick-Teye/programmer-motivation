@@ -341,7 +341,6 @@ blockquote footer {
 section.sign-up {
     grid-column: 1 / 24;
     grid-row: 3 / 4;
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(23, 1fr);
     grid-template-rows: auto;
@@ -369,4 +368,9 @@ p.heading-text {
 div.to-action-flex-container p {
     margin: 0%;
     color: #f9faf8;
+}
+
+div.call-to-action-text {
+    display: flex;
+    flex-direction: column;
 }
