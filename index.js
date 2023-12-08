@@ -1,6 +1,6 @@
 // Select the container and items
-const displayContainer = document.querySelector('.tools-info-images-section');
-const items = displayContainer.querySelectorAll('.tools-info-image-coat');
+const displayContainer = document.querySelector('div.tools-info-images-section');
+const items = displayContainer.querySelectorAll('div.tools-info-image-coat');
 
 // Number of items to display at a time
 function findBatchSize() {
