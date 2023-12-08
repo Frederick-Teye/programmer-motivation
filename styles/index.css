@@ -478,3 +478,16 @@ span {
         font-size: 0.8em;
     }
 }
+
+
+
+/* add styles separately for the first four images */
+div.first-three, div.forth {
+    display: inline-block;
+}
+
+@media screen and (max-width: 430px) {
+    div.forth {
+        display: none;
+    }
+}
